@@ -983,6 +983,7 @@ def getAnswer(name):
 	except:
 		pass
 	return getAnserInfo(name)
+print getAnswer("Who is the president of the us")
 def getMovieDate(name):
 	name = name +" release date"
 	name=name.replace(" ","+")

@@ -25,7 +25,7 @@ def apiAiResponse(userIn):
 	return res
 
 
-
+print (apiAiResponse("Hello"))
 
 
 

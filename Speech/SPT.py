@@ -164,9 +164,8 @@ userIn ="begin"
 subject = ""
 while userIn != "":
     userIn = raw_input("Speak to AVA: ")
-    userIn = userIn.replace("he",subject).replace("she",subject).replace("him",subject).replace("her",subject).replace("his",subject)
-
     if ("info on" in userIn or "information on" in userIn or "information about" in userIn or "look up" in userIn):
+        #userIn = userIn.replace("he",subject).replace("she",subject).replace("him",subject).replace("her",subject).replace("his",subject)
         begin = userIn.find("info")
         index = userIn.find(" ",userIn.find(" ",begin+1)+1)
         print("Pulling up information on "+userIn[index:])
